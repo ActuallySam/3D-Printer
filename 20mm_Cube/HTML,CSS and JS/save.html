@@ -1,0 +1,29 @@
+<html>
+<head>
+	<script language="vbscript">
+	sub calculate()
+	dim m,y,age
+	m=cint(document.f1.t3.value)
+	y=document.f1.t4.value
+	age=year(now)-1
+	if m<month(now) then
+	msgbox("ur age is"& age &"years")
+	else
+	msgbox("ur age is " & age-1 &"years")
+	end if	
+	end sub
+	</script>
+</head>
+<body bgcolor="red">
+<form name="f1">
+<h2>
+enter name: <input type= "text" name="t1">
+<br>
+enter dob : <input type="text" name="t2">
+<input type="text" name="t3">
+<input type="text" name="t4">
+<br>
+<input type="button" value="click" onClick="calculate()">
+</form>
+</body>
+</html>

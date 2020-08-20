@@ -1,0 +1,19 @@
+After connecting the printer to the pronterface , just type the CODE :
+                                                 M303 S215	C10
+
+M303 - Will do the PID tuning of the thing
+S215 -Will set the temperature of the extruder to 215 degrees
+C10- Will make the thing do its thing till 10 cycles
+
+Run that until it gives the 3 default values for the P, I and D separately.
+
+Now enter :               M301 P(value) I(value) D(value)  
+
+It probably will give the configuration output for that thing. Even if it doesn't , to save the code and the changes, 
+Enter :                       M500
+
+That's it folks.......................   
+
+
+http://3daddict.com/pid-tune-3d-printer/
+https://www.youtube.com/watch?v=-6lRHS7d-sQ
